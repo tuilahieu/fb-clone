@@ -27,12 +27,12 @@ submitReg.addEventListener("click", function () {
     gender: `${genderUser}`,
     avatarUrl: `${avatarDefault}`,
   };
-  console.log(user.gender);
   if (firstName && lastName && username && password) {
     localStorage.setItem("user", JSON.stringify(user));
     alert(
       `Đăng kí thành công!! \n Tên người dùng : ${firstName} ${lastName} \n Tài khoản: ${username} \n Mật khẩu: ${password} \n Hãy ghi nhớ tài khoản và mật khẩu để đăng nhập ngay bây giờ.`
     );
+    localStorage.setItem("isLogin", false);
     window.location.href = "/";
   } else {
     alert("Bạn chưa điền đủ thông tin.\n Vui lòng điền lại");

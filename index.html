@@ -161,5 +161,9 @@
       </div>
     </div>
     <script src="./js/login.js"></script>
+    <script>
+      const isLogin = JSON.parse(localStorage.getItem("isLogin")) || false;
+      if (isLogin) window.location.href = "/home";
+    </script>
   </body>
 </html>

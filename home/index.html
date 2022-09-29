@@ -88,19 +88,26 @@
               <i class="fa-solid fa-message" title="Tin Nhắn"></i>
               <i class="fa-solid fa-bell" title="Thông Báo"></i>
             </div>
-            
-            <img src="../img/gender/nam.jpg" />
+
+            <div class="view-info position-relative">
+              <img src="../img/gender/nam.jpg" />
+              <div class="info-hidden position-absolute">
+                <span class="py-2 d-inline-block"
+                  >Xin chào, <b>Tran Hieu</b></span
+                >
+                <br />
+                <a href="./logout.html" style="text-decoration: none"
+                  >Đăng xuất</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
     <div
       class="container-fluid"
-      style="
-        padding-top: 60px;
-        margin-top: 30px;
-        background-color: #f0f2f5;
-      "
+      style="padding-top: 60px; margin-top: 30px; background-color: #f0f2f5"
     >
       <div class="row">
         <nav class="nav__left col-lg-3 col-xxl-3 col-xl-3 d-none d-lg-block">
@@ -213,7 +220,12 @@
                   class="role__header-items add-story position-relative mx-2"
                   style="height: 100%"
                 >
-                  <img src="../img/gender/nu.jpg" alt="" width="100%" class="your-img"/>
+                  <img
+                    src="../img/gender/nu.jpg"
+                    alt=""
+                    width="100%"
+                    class="your-img"
+                  />
                   <div class="icon position-absolute">
                     <i class="fa-solid fa-plus"></i>
                   </div>
@@ -227,7 +239,60 @@
           <div class="role__action">
             <div class="d-flex" style="height: 50px">
               <img src="../img/gender/nam.jpg" alt="" height="100%" />
-              <input type="text" placeholder="Hieu ơi, bạn đang nghĩ gì thế?" />
+              <input
+                class="input__post-not-created"
+                type="text"
+                placeholder="Hieu ơi, bạn đang nghĩ gì thế?"
+              />
+              <div class="position-fixed overlay d-none">
+                <div class="post__create position-relative">
+                  <i
+                    class="fa-solid fa-xmark position-absolute exit-creat-post"
+                    style="right: 24px; cursor: pointer"
+                  ></i>
+                  <h3 class="text-center">Tạo bài viết</h3>
+                  <hr />
+                  <img
+                    src="../img/gender/nam.jpg"
+                    alt=""
+                    height="40px"
+                    style="
+                      border-radius: 50%;
+                      border: 1px solid #ccc;
+                      margin-right: 5px;
+                    "
+                  />
+                  <span class="name-user-fdf43432" style="font-weight: bold"
+                    >Tran Hieu</span
+                  >
+                  <br />
+                  <input
+                    class="post__created-input my-3"
+                    type="text"
+                    placeholder="Hieu ơi, bạn đang nghĩ gì thế?"
+                  />
+                  <br />
+                  <div class="uploaded">
+                    <label
+                      class="upload-file position-relative"
+                      for="uploadFile"
+                    >
+                      <i class="fa-solid fa-image"></i>
+                      <span>Thêm ảnh/video</span>
+                      <span>hoặc kéo và thả</span>
+                      <img class="uploaded-img" />
+                    </label>
+                    <input type="file" hidden id="uploadFile" />
+                  </div>
+                  <br />
+                  <button
+                    style="width: 100%"
+                    class="btn btn-primary upload-submit"
+                  >
+                    Đăng
+                  </button>
+                </div>
+              </div>
             </div>
             <hr />
             <div
@@ -252,159 +317,108 @@
           <div class="role__posts">
             <div class="single__post">
               <div class="post__header d-flex justify-content-between">
-                <div class="post__header-1 d-flex">
+                <div class="post__header-1 d-flex position-relative">
                   <img src="../img/gender/nam.jpg" alt="" height="100%" />
-                  <p style="line-height: 50px; font-weight: 600">
-                    Tran Hieu
-                    <i
-                      style="
-                        border-radius: 50%;
-                        padding: 3px 4px;
-                        background-color: #1b74e4;
-                        color: #fff;
-                        font-size: 10px;
-                        margin-left: 2px;
-                      "
-                      class="fa-solid fa-check"
-                    ></i>
-                  </div>
-                  <div class="post__header-2 flex-grow-1 text-end">
-                    <button class="btn btn-danger">xóa</button>
-                  </div>
+                  <p
+                    style="
+                      line-height: 50px;
+                      font-weight: 600;
+                      position: relative;
+                    "
+                  >
+                    <span>Tran Hieu</span>
                   </p>
+                </div>
+                <div class="post__header-2">
+                  <button class="btn btn-danger">xóa</button>
+                </div>
               </div>
-              <div class="post__content"> 
-                <p>Hehehe rảnh mình sẽ update thêm chức năng post bài</p>
-                  <img src="../img/post.png" width="100%" class="post__img" style="border:1px solid #ccc">
+              <div class="post__content">
+                <p>
+                  Ngày mai sẽ hoàn thiện thêm post vào mảng để lưu vào
+                  localstorage nè =))
+                  <br />
+                  now 12:32 30/9/2022
+                </p>
+                <img
+                  src="../img/post.png"
+                  width="100%"
+                  class="post__img"
+                  style="border: 1px solid #ccc"
+                />
               </div>
-              <div class="post__status d-flex align-items-center justify-content-between py-2">
+              <div
+                class="post__status d-flex align-items-center justify-content-between py-2"
+              >
                 <div class="post__emote">
-                  <i style="background-color: #1877F2;" class="fa-solid fa-thumbs-up"></i>
-                  <i style="background-color: #FA383E;" class="fa-solid fa-heart"></i>
-                  <i style="background-color: #F5C33B;" class="fa-solid fa-face-laugh-squint"></i>
+                  <i
+                    style="background-color: #1877f2"
+                    class="fa-solid fa-thumbs-up"
+                  ></i>
+                  <i
+                    style="background-color: #fa383e"
+                    class="fa-solid fa-heart"
+                  ></i>
+                  <i
+                    style="background-color: #f5c33b"
+                    class="fa-solid fa-face-laugh-squint"
+                  ></i>
                   <span>1,234</span>
                 </div>
-                <div >
+                <div>
                   <span>1,8K bình luận</span>
                   <span style="margin-left: 6px">1,8K chia sẻ</span>
                 </div>
               </div>
               <div class="post__action d-flex">
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-thumbs-up"></i>
-                    <span>Thích</span>
-                  </div>
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-comment"></i>
-                    <span>Bình luận</span>
-                  </div>
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-share"></i>
-                    <span>Chia sẻ</span>
-                  </div>
-              </div>
-              <div class="comment-view view d-flex align-items-center my-2">
-                <img src="../img/gender/nam.jpg" alt="" height="40px" style="border-radius: 50%;border: 1px solid #ccc;margin-right: 5px"/>
-                  <div class="comment-block rounded-3 p-2">
-                    <div class="comments">
-                      <span style="line-height: 40px; font-weight: 600">
-                        Tran Hieu
-                        <i
-                          style="
-                            border-radius: 50%;
-                            padding: 3px 4px;
-                            background-color: #1b74e4;
-                            color: #fff;
-                            font-size: 10px;
-                            margin-left: 2px;
-                          "
-                          class="fa-solid fa-check"
-                        ></i>
-                      </span>
-                      <br>
-                      <span>Cho mình xin nhận xét với nha =)))</span>
-                    </div>
-                  </div>
-              </div>
-              <div class="status-comment text-center">Bài viết đã bị tắt bình luận.</div>
-            </div>
-            <div class="single__post">
-              <div class="post__header d-flex justify-content-between">
-                <div class="post__header-1 d-flex">
-                  <img src="../img/gender/nam.jpg" alt="" height="100%" />
-                  <p style="line-height: 50px; font-weight: 600">
-                    Tran Hieu
-                    <i
-                      style="
-                        border-radius: 50%;
-                        padding: 3px 4px;
-                        background-color: #1b74e4;
-                        color: #fff;
-                        font-size: 10px;
-                        margin-left: 2px;
-                      "
-                      class="fa-solid fa-check"
-                    ></i>
-                  </div>
-                  <div class="post__header-2 flex-grow-1 text-end">
-                    <button class="btn btn-danger">xóa</button>
-                  </div>
-                  </p>
-              </div>
-              <div class="post__content"> 
-                <p>Mình mới hoàn thiện layout này lúc 18:02 ngày 29/9/2022</p>
-                  <img src="../img/post.png" width="100%" class="post__img" style="border:1px solid #ccc">
-              </div>
-              <div class="post__status d-flex align-items-center justify-content-between py-2">
-                <div class="post__emote">
-                  <i style="background-color: #1877F2;" class="fa-solid fa-thumbs-up"></i>
-                  <i style="background-color: #FA383E;" class="fa-solid fa-heart"></i>
-                  <i style="background-color: #F5C33B;" class="fa-solid fa-face-laugh-squint"></i>
-                  <span>1,234</span>
+                <div class="btn btn-light flex-grow-1">
+                  <i style="color: #000" class="fa-solid fa-thumbs-up"></i>
+                  <span>Thích</span>
                 </div>
-                <div >
-                  <span>1,8K bình luận</span>
-                  <span style="margin-left: 6px">1,8K chia sẻ</span>
+                <div class="btn btn-light flex-grow-1">
+                  <i style="color: #000" class="fa-solid fa-comment"></i>
+                  <span>Bình luận</span>
+                </div>
+                <div class="btn btn-light flex-grow-1">
+                  <i style="color: #000" class="fa-solid fa-share"></i>
+                  <span>Chia sẻ</span>
                 </div>
               </div>
-              <div class="post__action d-flex">
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-thumbs-up"></i>
-                    <span>Thích</span>
-                  </div>
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-comment"></i>
-                    <span>Bình luận</span>
-                  </div>
-                  <div class="btn btn-light flex-grow-1">
-                    <i style="color: #000;" class="fa-solid fa-share"></i>
-                    <span>Chia sẻ</span>
-                  </div>
-              </div>
               <div class="comment-view view d-flex align-items-center my-2">
-                <img src="../img/gender/nam.jpg" alt="" height="40px" style="border-radius: 50%;border: 1px solid #ccc;margin-right: 5px"/>
-                  <div class="comment-block rounded-3 p-2">
-                    <div class="comments">
-                      <span style="line-height: 40px; font-weight: 600">
-                        Tran Hieu
-                        <i
-                          style="
-                            border-radius: 50%;
-                            padding: 3px 4px;
-                            background-color: #1b74e4;
-                            color: #fff;
-                            font-size: 10px;
-                            margin-left: 2px;
-                          "
-                          class="fa-solid fa-check"
-                        ></i>
-                      </span>
-                      <br>
-                      <span>Cho mình xin nhận xét với nha =)))</span>
-                    </div>
+                <img
+                  src="../img/gender/nam.jpg"
+                  alt=""
+                  height="40px"
+                  style="
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                    margin-right: 5px;
+                  "
+                />
+                <div class="comment-block rounded-3 p-2">
+                  <div class="comments">
+                    <span style="line-height: 40px; font-weight: 600">
+                      Tran Hieu
+                      <i
+                        style="
+                          border-radius: 50%;
+                          padding: 3px 4px;
+                          background-color: #1b74e4;
+                          color: #fff;
+                          font-size: 10px;
+                          margin-left: 2px;
+                        "
+                        class="fa-solid fa-check"
+                      ></i>
+                    </span>
+                    <br />
+                    <span>Cho mình xin nhận xét với nha =)))</span>
                   </div>
+                </div>
               </div>
-              <div class="status-comment text-center">Bài viết đã bị tắt bình luận.</div>
+              <div class="status-comment text-center">
+                Bài viết đã bị tắt bình luận.
+              </div>
             </div>
           </div>
         </section>
@@ -470,6 +484,10 @@
         </nav>
       </div>
     </div>
+    <script>
+      if (!JSON.parse(localStorage.getItem("isLogin")))
+        window.location.href = "/";
+    </script>
     <script src="../js/home.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -488,22 +506,22 @@
           slidesToShow: 5,
           slidesToScroll: 5,
           responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 4,
-              slidesToScroll: 4,
-              infinite: true,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3
-            }
-          },
-        ]
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              },
+            },
+          ],
         });
       });
     </script>

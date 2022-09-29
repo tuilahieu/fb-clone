@@ -18,6 +18,7 @@ form.addEventListener("submit", function (e) {
     (userReg && username == userReg.username && password == userReg.password) ||
     (username == defaultAccount.username && password == defaultAccount.password)
   ) {
+    localStorage.setItem("isLogin", true);
     window.location.href = "./home";
   } else if (
     (username == defaultAccount.username &&
