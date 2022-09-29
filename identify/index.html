@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../img/favicon/facebook-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/default.css" />
+    <link rel="stylesheet" href="../css/reset_page.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <title>Quên mật khẩu | Không thể đăng nhập</title>
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="/">
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg"
+          width="150px"
+        />
+      </a>
+      <div class="login-fast">
+        <form action="#">
+          <input
+            type="text"
+            class="fast-access-input hidden-on-tablet"
+            placeholder="Email hoặc số điện thoại"
+          />
+          <input
+            type="password"
+            class="fast-access-input hidden-on-tablet"
+            placeholder="Mật khẩu"
+          />
+          <a type="submit" class="fast-access-input login" href="/"
+            >Đăng nhập</a
+          >
+          <a href="../identify" class="hidden-on-tablet"
+            >Bạn quên tài khoản ư?</a
+          >
+        </form>
+      </div>
+    </header>
+    <div class="main">
+      <div class="search-account">
+        <h2 class="search-head">Tìm tài khoản của bạn</h2>
+
+        <div class="search-detail">
+          <div class="error-log not-found">
+            <h4>Không có kết quả tìm kiếm</h4>
+            <p>
+              Tìm kiếm không trả về kết quả nào. Vui lòng thử lại với thông tin
+              khác.
+            </p>
+          </div>
+          <div class="error-log not-fill">
+            <h4>Vui lòng điền vào ít nhất một trường</h4>
+            <p>
+              Điền vào ít nhất một mục bên dưới để tìm kiếm tài khoản của bạn.
+            </p>
+          </div>
+          <p>
+            Vui lòng nhập email hoặc số di động để tìm kiếm tài khoản của bạn.
+          </p>
+          <input
+            type="text"
+            class="input-control"
+            placeholder="Email hoặc số điện thoại"
+          />
+        </div>
+        <div class="search-foot">
+          <button class="search-btn cancel">
+            <a href="/" style="text-decoration: none; color: #000">Hủy</a>
+          </button>
+          <button class="search-btn continue">Tìm kiếm</button>
+        </div>
+      </div>
+
+      <div class="found">
+        <h2 class="search-head">Nhận diện tài khoản của bạn</h2>
+        <div class="search-detail">
+          <p>Những tài khoản này khớp với tìm kiếm của bạn.</p>
+          <!-- render template -->
+          <div class="render-founded"></div>
+        </div>
+        <div class="search-foot">
+          <button class="search-btn cancel" onclick="backToIdentify()">
+            <a style="text-decoration: none; color: #000">Quay lại</a>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="bot reset-bottom">
+      <div class="grid">
+        <div class="row">
+          <div class="l-12 m-12 c-12">
+            <div class="language">
+              <ul class="list-langs">
+                <li class="lang active">Tiếng Việt</li>
+                <li class="lang">English (UK)</li>
+                <li class="lang">中文(台灣)</li>
+                <li class="lang">한국어</li>
+                <li class="lang">日本語</li>
+                <li class="lang">Français (France)</li>
+                <li class="lang">ภาษาไทย</li>
+                <li class="lang">Deutsch</li>
+                <li class="lang">ภาษาไทย</li>
+                <li class="lang">Português (Brasil)</li>
+                <li class="lang">Italiano</li>
+                <li class="lang">
+                  <button class="lang-more">+</button>
+                </li>
+              </ul>
+            </div>
+            <div class="fetures">
+              <ul class="list-feature">
+                <li class="feture">Đăng kí</li>
+                <li class="feture">Đăng nhập</li>
+                <li class="feture">Messenger</li>
+                <li class="feture">Facebook</li>
+                <li class="feture">LiteWatch</li>
+                <li class="feture">Địa điểm</li>
+                <li class="feture">Marketplace</li>
+                <li class="feture">Facebook Pay</li>
+                <li class="feture">OculusPortal</li>
+                <li class="feture">Instagram</li>
+                <li class="feture">Bulletin</li>
+                <li class="feture">Địa phương</li>
+                <li class="feture">Chiến dịch gây quỹ</li>
+                <li class="feture">Dịch vụ</li>
+                <li class="feture">Trung tâm thông tin bỏ phiếu</li>
+                <li class="feture">Nhóm</li>
+                <li class="feture">Giới thiệu</li>
+                <li class="feture">Tạo quảng cáo</li>
+                <li class="feture">Tạo Trang</li>
+                <li class="feture">Nhà phát triển</li>
+                <li class="feture">Tuyển dụng</li>
+                <li class="feture">Quyền riêng tư</li>
+                <li class="feture">Cookie</li>
+                <li class="feture">Lựa chọn quảng cáo</li>
+                <li class="feture">Điều khoản</li>
+                <li class="feture">Trợ giúp</li>
+                <li class="feture">
+                  Tải thông tin liên hệ lên & đối tượng không phải người dùng
+                </li>
+                <li class="feture">Cài đặt</li>
+                <li class="feture">Nhật ký hoạt động</li>
+              </ul>
+            </div>
+            <div class="copyright">
+              <p class="copyright-text">Meta © 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/reset_pass.js"></script>
+  </body>
+</html>

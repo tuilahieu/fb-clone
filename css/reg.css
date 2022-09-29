@@ -1,0 +1,135 @@
+.app {
+    text-align: center;
+    background-color: #f0f2f5;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-form {
+    min-width: 400px;
+    width: 432px;
+    background-color: #fff;
+    margin-bottom: 60px;
+    color: #606770;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+    
+}
+
+.reg-intro > h2 {
+    color: #000;
+    font-size: 26px;
+}
+
+.reg-intro {
+    margin: 12px 0;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.input {
+    border-top: 1px solid #ccc;
+}
+
+.input,
+.birth,
+.gender,
+.policy {
+    padding: 0 24px;
+}
+
+.input-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.input-2 > .form-control:nth-child(1) {
+    margin-right: 10px;
+}
+
+.form-control {
+    margin: 6px 0;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.birth-text,
+.gender-text {
+    text-align: left;
+    padding: 0 24px;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.birth,
+.gender {
+    display: flex;
+}
+
+.gender-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+}
+
+.birth select,
+.gender .gender-detail{
+    flex: 1;
+    padding: 6px 14px;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.policy {
+    font-size: 11px;
+    text-align: left;
+}
+
+.policy u {
+    text-decoration: none;
+    color: #385898;
+    cursor: pointer;
+}
+
+.policy p {
+    margin-top: 15px;
+    line-height: 14px;
+}
+
+.reg-btn {
+    padding: 8px 24px;
+    font-size: 18px;
+    min-width: 200px;
+    border: none;
+    background-color: #00a400;
+    color: #fff;
+    border-radius: 6px;
+    font-weight: bold;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.login-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1877f2;
+    padding-bottom: 32px;
+}
+
+.reg-bottom {
+    margin: 24px auto 0 auto;
+    max-width: 980px;
+}

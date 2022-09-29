@@ -1,0 +1,160 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+}
+
+.header__logo {
+    flex: 1;
+}
+
+.fast-access-input {
+    padding: 10px 12px;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 0 2px;
+}
+
+.fast-access-input.login {
+    background-color: #1877f2;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-fast a {
+    text-decoration: none;
+    color: #1877f2;
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.main {
+    min-height: 50vh;
+    background-color: #e9ebee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset-bottom {
+    margin: 100px auto 0 auto;
+    max-width: 980px;
+}
+
+.search-account,
+.found {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    min-width: 400px;
+}
+
+.search-head {
+    font-size: 20px;
+}
+
+.search-foot {
+    text-align: right;
+}
+
+.search-head,
+.search-foot,
+.search-detail{
+    padding: 16px 24px;
+}
+
+.error-log {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 12px;
+    display: none;
+}
+
+.search-detail {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-detail > p {
+    margin-bottom: 12px;
+}
+
+.search-btn {
+    padding: 8px 20px;
+    outline: 0;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-btn.cancel {
+    background-color: #e4e6eb;
+}
+.search-btn.continue {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+@media (max-width: 950px) {
+    .hidden-on-tablet {
+        display: none;
+    }
+    .found {
+        min-width: 100%;
+    }
+}
+
+.found {
+    display: none;
+    width: 500px;
+}
+
+.main.founded .found {
+    display: block;
+}
+
+.main.founded .search-account {
+    display: none;
+}
+
+.render-founded {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: scroll;
+}
+
+.render-founded::-webkit-scrollbar {
+    width: 10px;
+}
+
+.user-found {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-found .avatar-founded {
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    overflow: hidden;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin-right: 12px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+}

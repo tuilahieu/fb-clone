@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.language,
+.fetures,
+.copyright {
+    font-size: 12px;
+    padding: 12px;
+    margin: 0 50px;
+}
+
+
+.language {
+    border-bottom: 1px solid #ccc;
+}
+
+.lang,
+.feture,
+.copyright-text {
+    display: inline-block;
+    color: #8a8d91;
+}
+
+.lang {
+    margin: 0 3px;
+}
+
+.feture {
+    margin: 3px 5px;
+}
+
+.lang.active {
+    color: #000;
+}
+
+.lang-more {
+    padding: 0px 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
